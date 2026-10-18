@@ -28,11 +28,11 @@ a:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
 <body>
 <main>
 <h1>FieldPrism Privacy Policy</h1>
-<p class="meta">Effective date: 2026-10-14<br>Developer: Kellen Lor<br>Contact: <a href="mailto:fieldprism.app@gmail.com">fieldprism.app@gmail.com</a></p>
+<p class="meta">Effective date: 2026-10-18<br>Developer: Kellen Lor<br>Contact: <a href="mailto:fieldprism.app@gmail.com">fieldprism.app@gmail.com</a></p>
 
 <div class="summary">
 <h2>In one paragraph</h2>
-<p>FieldPrism is an iPhone app for grading short video clips. It has no account, no ads, no analytics, no tracking and no crash reporter. The developer does not collect any data from you. Your clips, projects and settings stay on your iPhone. The app only asks for access to your Photos library. Files leave your phone only if you choose to share them, or if iOS itself handles them, for example when iOS downloads an iCloud-only clip or backs up your phone.</p>
+<p>FieldPrism is an iPhone app for grading short video clips. It has no account, no ads, no analytics, no tracking and no crash reporter. The developer does not collect any data from you. Your clips, projects and settings stay on your iPhone. With full access to your Photos library, the app can show a grid of your videos so you can pick a clip. It asks for that access only after you tap Continue. With limited access, or if you do not allow access, the app uses the iOS system photo picker instead, which runs outside the app and gives the app only the clip you pick. Nothing from your library is uploaded. Files leave your phone only if you choose to share them, or if iOS itself handles them, for example when iOS downloads an iCloud-only clip or backs up your phone.</p>
 </div>
 
 <h2>What FieldPrism is</h2>
@@ -41,8 +41,9 @@ a:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
 <h2>Data the app handles, and where it stays</h2>
 <p>All of this happens on your iPhone. The developer does not receive any of it.</p>
 <ul>
-<li><strong>Your clips.</strong> A clip you pick from Photos is opened in place. A clip you pick from Files is referenced in place. The app makes its own copy of a clip only if Photos will not hand over the original. That copy stays inside the app.</li>
-<li><strong>Projects, templates, settings and thumbnails.</strong> Your grade settings, saved looks (templates), project thumbnails and preferences are stored on your iPhone, inside the app's own storage. A project thumbnail is a single frame from your clip.</li>
+<li><strong>Your clips.</strong> A clip you pick from Photos is opened in place. A clip you pick from Files is referenced in place. The app makes its own copy of a clip only if Photos will not hand over the original when you use the Photos picker. That copy stays inside the app.</li>
+<li><strong>Browsing your Photos videos.</strong> If you have allowed full access to your Photos library, the Open from Photos button shows a grid of the videos in your Photos library, newest first. To draw it, the app reads the list of your videos (each video's Photos identifier, length and date) into memory, and asks Photos for a small thumbnail for the squares on screen and a few either side. A square shows the video's length. The date is used only for the description VoiceOver reads aloud. The thumbnails are kept in memory only while you browse. The app does not save them to storage and does not send them anywhere, and nothing is uploaded. The thumbnail requests are made with iCloud downloads turned off. The grid does not play, open or analyse your videos, and it does not read your location. When you tap a video, the app stores that video's Photos identifier in the project and opens the clip in place from Photos, as described in the iCloud section below.</li>
+<li><strong>Projects, templates, settings and thumbnails.</strong> Your grade settings, saved looks (templates), project thumbnails and preferences are stored on your iPhone, inside the app's own storage. A project thumbnail is a single frame from your clip, saved as a small image inside the app's storage. A small marker file next to a project records that you exported it. The Home screen reads your saved projects once when the app starts.</li>
 <li><strong>Imported LUT files.</strong> If you import a .cube LUT file, the app keeps a copy in its own Documents folder until you delete it.</li>
 <li><strong>Exports.</strong> Finished exports are saved to a "FieldPrism" album in your Photos library. The newest five exports are also kept in the app's folder, which you can see in the Files app under On My iPhone. Older exports are removed from that folder automatically. Copies in Photos are not removed by the app.</li>
 <li><strong>Still images.</strong> A still frame is only shared when you choose to share it. It is not saved to Photos by the app. Its temporary file is deleted after sharing and the next time the app starts.</li>
@@ -56,14 +57,19 @@ a:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
 <li>No tracking.</li>
 <li>No crash reporter built into the app.</li>
 <li>No data collected by the developer.</li>
+<li>No uploading of your Photos library, the list of your videos, or their thumbnails.</li>
 <li>No network code in the app that sends your data anywhere.</li>
 </ul>
 
 <h2>Permission: Photos</h2>
-<p>The only permission the app asks for is access to your Photos library. It asks when it first needs it, not when the app opens.</p>
+<p>The only permission the app asks for is access to your Photos library. It asks when it first needs it, not when the app opens. The first time you tap Open from Photos, the app first shows one line of explanation and a Continue button. The iOS permission prompt appears only after you tap Continue.</p>
+<p>The iOS permission prompt shows this text, written by the developer:</p>
+<p><em>&ldquo;Shows your videos so you can choose clips to grade, and saves your graded exports into a FieldPrism album.&rdquo;</em></p>
 <ul>
-<li><strong>Read and write access</strong> lets the app open the clip you picked and find or create the FieldPrism album to file your exports in.</li>
-<li><strong>Add-only access</strong> is the fallback. If you allow only adding, exports are saved to Photos but are not filed into the FieldPrism album.</li>
+<li><strong>Read and write access</strong> lets the app show the grid of your videos (the grid is available only with full access), open the clip you picked, and find or create the FieldPrism album to file your exports in.</li>
+<li><strong>Limited access, or access turned off.</strong> The app does not show its own grid. Open from Photos opens the iOS system photo picker, which runs outside the app, and the app receives only the clip you pick. The app also shows a small row that opens iOS Settings, where you can allow full access if you want the grid. You can dismiss that row, and the app remembers that on your iPhone only. If Photos access is restricted on your iPhone (for example by Screen Time or a device profile), the app shows a plain note and no link.</li>
+<li><strong>Search in Photos.</strong> Inside the grid, a menu item called Search in Photos opens the same iOS system photo picker, for clips the grid does not show.</li>
+<li><strong>Add-only access</strong> is the fallback for saving. If you allow only adding, exports are saved to Photos but are not filed into the FieldPrism album.</li>
 </ul>
 <p>The app does not ask for camera, microphone, location or contacts access. It does not read your location. It does not edit or delete your photos or videos.</p>
 
@@ -89,7 +95,7 @@ a:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
 <p>FieldPrism includes the open-source OpenCV library (version 5.0.0, Apache-2.0 licence) to help calculate motion blur. It is built into the app and runs entirely on your iPhone. It does not connect to the internet in this app. The app lists its open-source licences in the About screen (gear icon on the home screen).</p>
 
 <h2>iCloud and downloads handled by iOS</h2>
-<p>FieldPrism does not use iCloud sync and does not upload anything to iCloud. If you pick a clip that is stored only in iCloud Photos, iOS itself downloads it so the app can open it. The app does not make that request itself.</p>
+<p>FieldPrism does not use iCloud sync and does not upload anything to iCloud. When you pick a clip that is stored only in iCloud Photos, either from the grid or with the Photos picker, iOS downloads it so the app can open it. When you tap a video in the grid, the app asks Photos for the clip and allows that download. The grid's thumbnails are requested without allowing a download. Nothing is sent to the developer.</p>
 
 <h2>Sharing</h2>
 <p>The app shares a file only when you choose to, using the standard iOS share sheet. What happens next depends on the app or service you pick. FieldPrism does not control that.</p>
@@ -97,9 +103,10 @@ a:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
 <h2>Backups</h2>
 <p>Standard iOS backups (iCloud Backup or a computer backup) include the app's data by default. That is Apple's backup, not collection by the developer.</p>
 <ul>
-<li><strong>Included in backups:</strong> your projects (grade settings, saved links to your clips, and thumbnails), templates, imported LUT files and app preferences.</li>
+<li><strong>Included in backups:</strong> your projects (grade settings, saved links to your clips, thumbnails and the small exported marker), templates, imported LUT files and app preferences.</li>
 <li><strong>Not included in backups:</strong> the exports folder, copies of clips the app made as a fallback, and the temporary Motion Blur working file.</li>
 </ul>
+<p>The video grid keeps nothing on disk, so nothing from it is in an app backup.</p>
 
 <h2>TestFlight, crash reports and feedback</h2>
 <p>The app itself contains no crash reporter or analytics. If you install a beta through TestFlight, Apple collects and may share with the developer crash logs, usage metrics Apple chooses to provide and any feedback you choose to submit. This is handled under Apple's own privacy policy, not by the app. The developer does not receive this through any code in FieldPrism.</p>
