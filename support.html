@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FieldPrism Support</title>
+<meta name="description" content="Support and frequently asked questions for FieldPrism, a video grading app for iPhone.">
+<style>
+:root{color-scheme:light dark;--bg:#ffffff;--fg:#1a1a1a;--muted:#4a4a4a;--rule:#767676;--link:#0b4fa8;--box:#f1f3f5}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#ececec;--muted:#b8b8b8;--rule:#8a8a8a;--link:#8ab8ff;--box:#1e1e1e}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:42rem;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 .25rem}
+h2{font-size:1.25rem;line-height:1.3;margin:2rem 0 .5rem;padding-top:1rem;border-top:2px solid var(--rule)}
+p,ul{margin:.6rem 0}
+ul{padding-left:1.3rem}
+li{margin:.3rem 0}
+a{color:var(--link);text-decoration:underline}
+.meta{color:var(--muted);margin:0}
+.summary{background:var(--box);border:2px solid var(--rule);border-radius:8px;padding:12px 16px;margin:1.25rem 0}
+.summary p{margin:0}
+a:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+<h1>FieldPrism Support</h1>
+<p class="meta">Developer: Kellen Lor<br>Contact: <a href="mailto:fieldprism.app@gmail.com">fieldprism.app@gmail.com</a></p>
+
+<div class="summary">
+<p>FieldPrism is an iPhone app that grades short video clips, especially Apple Log footage, with a film look, then exports the result to your Photos library. Everything runs on your iPhone.</p>
+</div>
+
+<h2>Contact</h2>
+<p>Questions, bugs or ideas: email <a href="mailto:fieldprism.app@gmail.com">fieldprism.app@gmail.com</a>. If you can, say which iPhone you use and attach a screenshot.</p>
+
+<h2>Which clips work best?</h2>
+<p>Log footage gives the app the most to work with: Apple Log and Apple Log 2, for example from the iPhone Camera app in ProRes Log or from Blackmagic Camera. Ordinary iPhone videos also open: standard (Rec.709) clips, and HDR (HLG) clips, which are converted to standard range. The app picks the right conversion from the clip's colour tags. A clip with no colour tags is treated as Apple Log 2, and the editor says so.</p>
+
+<h2>Why does it ask for access to my Photos, and what if I say no?</h2>
+<p>The first time you tap Open from Photos, the app explains in one line why it wants access, then iOS shows its permission prompt after you tap Continue. With full access, FieldPrism shows a grid of your videos so you can pick one without leaving the app. If you choose limited access or don't allow access, nothing is blocked: Open from Photos opens the iOS photo picker instead, and you can still open any clip. Inside the grid, the menu (…) has Search in Photos, which opens the same picker. You can change access at any time in Settings &gt; Privacy &amp; Security &gt; Photos &gt; FieldPrism.</p>
+
+<h2>Where do my exports go?</h2>
+<p>Each export is saved to an album called "FieldPrism" in your Photos library. The newest five exports are also kept in the Files app under On My iPhone &gt; FieldPrism &gt; Exports; older ones are removed from that folder automatically, but never from Photos. You can export in 8-bit or 10-bit.</p>
+
+<h2>Are there limits on Motion Blur?</h2>
+<p>Motion Blur is optional and is switched on in the Export sheet. It works on clips up to 15 seconds long after trimming, and not on HDR (HLG) clips or clips using a custom decode LUT. It is computed on your iPhone, so it takes a while: a 4K clip on High quality can take a few minutes, and the phone gets warm. The Export sheet shows an estimate before you start and a live countdown while it runs. Fast quality is quicker.</p>
+
+<h2>How do I send feedback from the TestFlight beta?</h2>
+<p>While using the beta, take a screenshot, tap the preview that appears, then tap Done and choose Share Beta Feedback to add a note. You can also open the TestFlight app, choose FieldPrism and tap Send Beta Feedback, or email <a href="mailto:fieldprism.app@gmail.com">fieldprism.app@gmail.com</a>.</p>
+
+<h2>Privacy</h2>
+<p>FieldPrism has no account, no ads, no analytics and no tracking, and the developer collects no data. Your clips, projects and settings stay on your iPhone. Read the full <a href="privacy.html">privacy policy</a>.</p>
+</main>
+</body>
+</html>
